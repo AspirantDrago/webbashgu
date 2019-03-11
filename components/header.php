@@ -7,10 +7,11 @@
  */
 
 include_once "head.php";
-
-$query =  mysqli_query($CON, 'SELECT NOW() AS `TIME`');
-$arr = mysqli_fetch_assoc($query);
+/*
+$query =  query('SELECT NOW() AS `TIME`');
+$arr = mysqli_fetch_array($query);
 echo $arr['TIME'];
+/*
 echo '<br>';
 $query =  mysqli_query($CON, 'SELECT NOW() AS `TIME`');
 print_r(mysqli_fetch_assoc($query));
@@ -20,3 +21,4 @@ print_r(mysqli_fetch_array($query));
 echo '<br>';
 $query =  mysqli_query($CON, 'SELECT NOW() AS `TIME`');  
 print_r(mysqli_fetch_all($query));
+*/

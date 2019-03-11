@@ -4,6 +4,9 @@ include_once "config_db.php";
 session_start();
 
 $CON = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+$CON->set_charset("utf8");
+
+include_once "functions.php";
 
 if(isset($_POST['email'])) {
     if ($_POST['pass'] == $_POST['pass2']) {

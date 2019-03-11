@@ -12,5 +12,6 @@
 <head>
     <title>Мой новый сайт</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
 </head>
 <body>

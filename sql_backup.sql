@@ -29,12 +29,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   `registration_data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы bgoogle.user: ~1 rows (приблизительно)
+-- Дамп данных таблицы bgoogle.user: ~3 rows (приблизительно)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT IGNORE INTO `user` (`id`, `sname`, `fname`, `email`, `pass`, `mixin`, `phone`, `birthday`, `registration_data`) VALUES
-	(1, 'Александ', 'Иванов', 'sanekclubstr@mail.ru', '', '', '', '0000-00-00', '2019-03-04 17:48:41');
+	(1, 'Александ', 'Иванов', 'sanekclubstr@mail.ru', '', '', '', '0000-00-00', '2019-03-04 17:48:41'),
+	(2, 'Павел', 'Дуров', 'durov@telegram.com', '', '', '', NULL, '2019-03-11 16:34:07'),
+	(3, 'Mark', 'Zhukenberg', 'mark@facebook.com', '', '', '', NULL, '2019-03-11 16:34:47');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
